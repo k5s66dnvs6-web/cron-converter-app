@@ -17,7 +17,7 @@ export const convertCron = (cron: string, fromOffset: number, toOffset: number) 
         if (newHour < 0) newHour += 24;
         return newHour.toString();
       });
-      return \`\${min} \${hours.join(',')} \${dom} \${month} \${dow}\`;
+      return `${min} ${hours.join(',')} ${dom} ${month} ${dow}`;
     }
 
     return cron;

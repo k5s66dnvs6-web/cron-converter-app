@@ -31,7 +31,7 @@ export function Toast({ message, type = 'info', duration = 3000, onClose }: Toas
   }[type];
 
   return (
-    <div className={\`fixed bottom-4 right-4 \${bgColor} text-white px-6 py-3 rounded-lg shadow-lg flex items-center gap-2 animate-in fade-in slide-in-from-bottom-4 duration-300\`}>
+    <div className={`fixed bottom-4 right-4 ${bgColor} text-white px-6 py-3 rounded-lg shadow-lg flex items-center gap-2 animate-in fade-in slide-in-from-bottom-4 duration-300`}>
       <span>{message}</span>
       <button
         onClick={() => setIsVisible(false)}
