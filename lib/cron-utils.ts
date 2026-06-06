@@ -33,3 +33,6 @@ export const getExplanation = (cron: string) => {
     return "Invalid cron expression";
   }
 };
+
+export const shiftCron = convertCron;
+export const getCronExplanation = getExplanation;

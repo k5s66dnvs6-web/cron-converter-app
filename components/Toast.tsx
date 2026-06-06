@@ -42,3 +42,5 @@ export function Toast({ message, type = 'info', duration = 3000, onClose }: Toas
     </div>
   );
 }
+
+export default Toast;
